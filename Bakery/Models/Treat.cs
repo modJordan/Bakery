@@ -8,6 +8,6 @@ namespace Bakery.Models
     public string Name { get; set; }
     public string Description { get; set; }
     public Flavor flavor { get; set; }
-    public List<TreatFlavor> JoinEntities { get; set; }
+    public ICollection<TreatFlavor> TreatFlavors { get; set; }
   }
 }
